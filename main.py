@@ -478,7 +478,8 @@ async def credits(ctx):
         log.add_field(name="Server Invite", value= (link), inline=False)
         await channel.send(embed=log)
 
-    
-bot.run('MTAwNjkzNDY3NzQyNjI3ODQzMA.GZlvHY.GHC3-Fb6G_bI4JuZTqXnsGytSMp8POeWiBPN-g')
+with open ('bot.txt','r')as txt:
+    content = txt.readlines()   
+    bot.run(content)
 
 
